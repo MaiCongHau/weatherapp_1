@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#B1E17A"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_marginLeft="3dp"
+            android:id="@+id/diadiem"
+            android:hint="Nhập địa điểm ở đây"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:backgroundTint="#0A73A5"
+            android:text="Search"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <TextView
+            android:id="@+id/tenthanhpho"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên thành phố"
+            android:textStyle="bold"
+            android:textSize="25dp">
+    </TextView>
+    <TextView
+        android:id="@+id/tenquocgia"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên quốc gia"
+        android:textStyle="bold"
+        android:textSize="25dp">
+    </TextView>
+    <ImageView
+        android:src="@drawable/cloud"
+        android:id="@+id/icon"
+        android:layout_marginTop="7dp"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="200dp"/>
+    <TextView
+        android:id="@+id/nhietdo"
+        android:layout_marginTop="3dp"
+        android:layout_gravity="center"
+        android:text="Nhiệt độ"
+        android:textSize="30dp"
+        android:textColor="#E12A2A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/trangthai"
+        android:layout_marginTop="3dp"
+        android:layout_gravity="center"
+        android:text="Trạng thái"
+        android:textSize="30dp"
+        android:textColor="#201B1B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:gravity="center"
+        android:weightSum="3"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/water"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+            <TextView
+                android:id="@+id/doam"
+                android:gravity="center"
+                android:textSize="40dp"
+                android:text="Độ ẩm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/cloud"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+            <TextView
+                android:id="@+id/may"
+                android:gravity="center"
+                android:textSize="40dp"
+                android:text="Mây"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/wind"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+            <TextView
+                android:id="@+id/gio"
+                android:gravity="center"
+                android:textSize="40dp"
+                android:text="Gió"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/date"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:text="Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/chuyenmanhinh"
+        android:layout_marginTop="5dp"
+        android:textSize="30dp"
+        android:text="6 ngày tiếp theo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+    <TextView
+        android:textStyle="bold|italic"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:text="Dữ liệu được lấy từ trang web OpenWeatherMap.org"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+</LinearLayout>
